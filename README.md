@@ -80,3 +80,97 @@
 ```
 * Maka hasilnya akan seperti berikut
 ![unordered-list](img/description-list.png)
+
+## Langkah 5 `Membuat Table`
+1. Membuat File baru bernama `lab3_table.html`.
+2. Tambahkan kode `table` berikut.
+```html
+ <table border="1" cellpadding="4" cellspacing="0">
+        <thead>
+            <tr>
+                <th>No.</th>
+                <th>Fakultas</th>
+                <th>Program Studi</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1.</td>
+                <td>Teknik</td>
+                <td>Teknik Informatika</td>
+            </tr>
+            <tr>
+                <td>2.</td>
+                <td>Teknik</td>
+                <td>Teknik Industri</td>
+            </tr>
+            <tr>
+                <td>3.</td>
+                <td>Teknik</td>
+                <td>Teknik Lingkungan</td>
+            </tr>
+        </tbody>
+    </table>
+```
+* Maka hasilnya akan seperti ini.
+![Table](img/Table.png)
+
+# Langkah 7
+## Menggabungkan sel data
+``` html
+<table border="1" cellpadding="6" cellspacing="0">
+    <thead>
+      <tr>
+        <th>No.</th>
+        <th>Fakultas</th>
+        <th>Program Studi</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>1.</td>
+        <td rowspan="3">Teknik</td>
+        <td>Teknik Informatika</td>
+      </tr>
+      <tr>
+        <td>2.</td>
+        <td>Teknik Industri</td>
+      </tr>
+      <tr>
+        <td>3.</td>
+        <td>Teknik Lingkungan</td>
+      </tr>
+    </tbody>
+   </table>
+```
+* Maka hasilnya akan seperti berikut 
+![sel_data](img/sel_data.png)
+
+# Langkah 8
+1. Membuat dokumen HTML baru dengan nama file `lab3_form.html` dan Buat Tabel
+
+``` html
+ <form action="proses.php" method="post">
+         <fieldset>
+         <legend>Data Pelanggan</legend>
+         <p>
+         <label for="nama">Nama</label>
+         <input type="text" id="nama" name="nama">
+         </p>
+         <p>
+         <label for="alamat">Alamat</label>
+        <textarea id="alamat" name="alamat" cols="20" rows="3"></textarea>
+         </p>
+        <p>
+        <label>Jenis Kelamin</label>
+        <input id="jk_l" type="radio" name="kelamin" value="L" /><label
+        for="jk_l">Laki-laki</label>
+         <input id="jk_p" type="radio" name="kelamin" value="P" /><label
+         for="jk_p">Perempuan</label>
+        </p>
+        <p><input type="submit" value="Login"></p>
+        </fieldset>
+    </form>
+```
+* Maka hasilnya akan seperti ini
+![membuat_form](img/buat_form.png)
