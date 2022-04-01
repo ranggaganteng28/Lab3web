@@ -115,8 +115,8 @@
 * Maka hasilnya akan seperti ini.
 ![Table](img/Table.png)
 
-# Langkah 7
-## Menggabungkan sel data
+## Langkah 7
+1. Menggabungkan sel data
 ``` html
 <table border="1" cellpadding="6" cellspacing="0">
     <thead>
@@ -146,8 +146,8 @@
 * Maka hasilnya akan seperti berikut 
 ![sel_data](img/sel_data.png)
 
-# Langkah 8
-1. Membuat dokumen HTML baru dengan nama file `lab3_form.html` dan Buat Tabel
+## Langkah 8 Menambahkan `Style pada Form`
+1. Menambahkan style css berikut pada head file   `lab3_form.html`
 
 ``` html
  <form action="proses.php" method="post">
@@ -174,3 +174,66 @@
 ```
 * Maka hasilnya akan seperti ini
 ![membuat_form](img/buat_form.png)
+
+## LANGKAH 9
+1. Menambahkan style pada form agar tampilan lebih menarik menggunakan CSS
+
+```html
+    <style>
+        form p > label {
+        display: inline-block;
+        width: 100px;
+        }
+        form input[type="text"], form textarea {
+        border: 1px solid #197a43;
+        }
+        form input[type="submit"] {
+        border: 1px solid #197a43;
+        background-color: #197a43;
+        color: #ffffff;
+        font-weight: bold;
+        padding: 5px 15px;
+        }
+    </style>
+```
+* Maka hasilnya akan seperti ini
+![style_form](img/style_form.png)
+
+# Pertanyaan
+### 1. Buatlah form yang menampilkan _dropdown_ menu dan _listbox_ dengan multiple selection.
+### Jawab
+A. Membuat _dropdown_
+* Tambahkan kode dropdown berikut untuk memilih golongan darah.
+```html
+<p>
+    <label>Golongan Darah</label>
+    <select name="gol_dar" id="gol_dar">
+        <option>- Pilih golongan darah -</option>
+        <option value="A">A</option>
+        <option value="B">B</option>
+        <option value="AB">AB</option>
+        <option value="O">O</option>
+    </select>
+</p>
+```
+* Maka hasilnya akan seperti ini
+![dropdown](img/dropdown.png)
+
+B. Membuat _listbox_
+* Tambahkan kode listbox berikut untuk memilih hobi.
+```html
+<p>
+    <label>Hobi</label>
+    <select name="gol_dar" id="gol_dar" multiple>
+        <option>- Pilih Hobi -</option>
+        <option value="Sepak Bola">Sepak Bola</option>
+        <option value="Berenang">Berenang</option>
+        <option value="Badminton">Badminton</option>
+        <option value="Bermain Alat Musik">Bermain Alat Musik</option>
+        <option value="Memasak">Memasak</option>
+        <option value="Membaca">Membaca</option>
+    </select>
+</p>
+```
+* Maka hasilnya akan seperti berikut
+![listbox](img/listbox.png)
