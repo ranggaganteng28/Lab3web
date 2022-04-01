@@ -237,3 +237,5 @@ B. Membuat _listbox_
 ```
 * Maka hasilnya akan seperti berikut
 ![listbox](img/listbox.png)
+
+> Perbedaannya terletak pada atribut `multiple` pada tag `<select>`. Apabila atribut ini ditambahkan dan dibuka dibrowser PC maka bisa memilih lebih dari satu, lalu terdapat atribut size yang dimana defaultnya itu 4, dan saya rubah ke 5 agar lebih besar barisannya.
